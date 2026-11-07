@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useCartStore } from '../store/cartStore';
 import { ShoppingCart as Cart } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,9 +28,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-8">
             <a href="#home" className="flex items-center gap-3" aria-label="Água na Boca Savassi - Início">
-              <div className="w-10 h-10 rounded-full bg-[var(--color-gold-500)] flex items-center justify-center">
-                <span className="text-[var(--color-chocolate-900)] font-display text-xl font-bold">A</span>
-              </div>
+              <img src={logoImg} alt="Água na Boca Savassi" className="w-10 h-10 h-auto" />
               <span className="font-display text-2xl font-medium text-[var(--color-white)] hidden sm:block">
                 Água na Boca
               </span>

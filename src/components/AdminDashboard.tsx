@@ -467,7 +467,7 @@ export function AdminDashboard() {
                 <div className="flex items-center gap-3">
                   <input
                     type="file"
-                    accept="image/*"
+                    accept="image/jpeg,image/jpg,image/png,image/webp,image/gif"
                     onChange={handleImageChange}
                     className="block w-full text-sm text-[var(--color-gold-soft)] file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-[var(--color-gold-500)] file:text-[var(--color-chocolate-900)] hover:file:bg-[var(--color-gold-400)]"
                   />
